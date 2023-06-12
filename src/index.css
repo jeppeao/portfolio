@@ -39,3 +39,11 @@ html, body, #root {
 .darkmode-secondary {
   color: var(--color-fg-dark-secondary);
 }
+
+.dark-text-secondary {
+  color: var(--color-fg-dark-secondary);
+}
+
+.light-text-secondary {
+  color: var(--color-fg-secondary);
+}
