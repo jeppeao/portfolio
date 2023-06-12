@@ -38,7 +38,7 @@
   width: 80px;
   height: 52px;
   border-radius: 52px;
-  background-color: #555;
+  background-color: #666;
   transition-property: background-color;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
@@ -48,7 +48,6 @@
 .checkbox:checked + div {
   background-color: var(--color-bg-dark-primary);
   color: var(--color-fg-dark-primary);
-
   left: 30px;
   transition-property: left, background-color;
   transition-duration: 0.5s;
