@@ -1,11 +1,40 @@
 .container {
   position: fixed;
-  background-color: var(--color-fg-dark-secondary);
-  margin:0;
   width: 100%;
   height: 80px;
+}
+
+.menu {
+  background-color: var(--color-fg-dark-secondary);
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
+  margin: 0;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.menubutton {
+  border-radius: 50%;
+  border:none;
+  position: absolute;
+  top: 40px;
+  transform: translate(0, -50%);
+  right: 15px;
+  cursor: pointer;
+}
+
+.menubutton:hover {
+  box-shadow: 0px 0px 2px 2px black;
+  transform: translate(0, calc(-50% - 2px));
+}
+
+.menubutton:active {
+  box-shadow: 0px 0px 4px 4px black;
+  transform: translate(0, -50%);
 }
 
 .darkmode {
@@ -14,4 +43,12 @@
 
 .lightmode {
   background-color: var(--color-fg-secondary);
+}
+
+.darkmodetext {
+  color: var(--color-bg-dark-primary);
+}
+
+.lightmodetext {
+  color: var(--color-bg-primary);
 }
