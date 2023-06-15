@@ -18,7 +18,7 @@ const Intro = ({isDarkmode = true}: IntroProps) => {
         <p className={`
           ${styles.subheader}
           ${isDarkmode ? "dark-text-secondary" : "light-text-secondary"}
-        `}>Below are some projects I've built while learning web development</p>
+        `}>Below are some projects I've built while studying web development</p>
       </div>
 
 
