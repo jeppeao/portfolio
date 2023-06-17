@@ -1,6 +1,11 @@
 h3 {
   margin: 0 0 16px 0;
   font-size: 1.5rem;
+  align-self: flex-start;
+}
+
+img {
+  border-radius: 5px;
 }
 
 .container {
@@ -23,16 +28,38 @@ h3 {
   line-height: 1.5rem;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 480px) {
   h3 {
     font-size: 2rem;
     margin-bottom: 24px;
   }
+
+  img {
+    border-radius: 10px;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+
+.darkemphasis {
+  color: var(--color-fg-secondary);
+}
+
+.lightemphasis {
+  color: var(--color-fg-secondary);
 }
 
 @media (min-width: 1000px) {
   h3 {
     font-size: 4rem;
     margin-bottom: 32px;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }

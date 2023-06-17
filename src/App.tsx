@@ -3,6 +3,8 @@ import Intro from './components/Intro/Intro'
 import Menu from './components/Menu/Menu'
 import Footer from './components/Footer/Footer';
 import ProjectView from './components/ProjectView/ProjectView';
+import { Projects } from './const';
+import { ProjectProps } from './const';
 
 function App() {
   const [isDarkmode, setIsDarkmode] = useState(true);
@@ -10,12 +12,19 @@ function App() {
     <>
       <Menu isDarkmode={isDarkmode} setDarkmode={setIsDarkmode}/>
       <Intro isDarkmode={isDarkmode}/>
-      <ProjectView 
-        isDarkmode={isDarkmode}
-        title={"Song Recommendations"}
-        imgSrc={"/Top-recommendations.png"}
-        description={"Find music based on spotify liked songs. This app will fetch recommendations for each of a user's liked songs on spotify and rank them on how many times they were recommended. Maybe the songs recommended over and over again are a match? Made using Next.js, tailwind and the spotify API."}
-      />
+      {
+        Projects.map((p: ProjectProps) => {
+          return (
+          <ProjectView
+            isDarkmode={isDarkmode}
+            title={p.title}
+            imgSrc={p.imgSrc}
+            description={p.description}
+            technologies={p.technologies}
+          />
+          );
+        })
+      }
       <Footer isDarkmode={isDarkmode}/>
     </>
   )
