@@ -27,6 +27,6 @@ a:visited, a:link {
 
 .lightflip {
   background-color: var(--color-fg-secondary);
-  color: var(--color-fg-primary);
+  color: var(--color-fg-dark-primary);
 }
 

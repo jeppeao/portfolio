@@ -1,0 +1,38 @@
+h3 {
+  margin: 0 0 16px 0;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20vh;
+}
+
+.content {
+  width: 80vw;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  line-height: 1.5rem;
+}
+
+@media (min-width: 500px) {
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1000px) {
+  h3 {
+    font-size: 4rem;
+    margin-bottom: 32px;
+  }
+}
