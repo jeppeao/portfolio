@@ -1,7 +1,13 @@
+a {
+  align-self: flex-start; 
+  pointer-events: all;
+}
+
 h3 {
   margin: 0 0 16px 0;
   font-size: 1.5rem;
-  align-self: flex-start;
+  display: flex;
+  align-items: center;
 }
 
 img {
@@ -11,8 +17,9 @@ img {
 .container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 20vh;
+  justify-content: left;
+  padding-bottom: 10vh;
+  padding-left: 10vw;
 }
 
 .content {
@@ -26,6 +33,10 @@ img {
 
 .description {
   line-height: 1.5rem;
+}
+
+.textlink {
+  text-decoration: underline dotted;
 }
 
 @media (min-width: 480px) {
@@ -61,5 +72,10 @@ img {
   .description {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .linkicon {
+    margin-left: 12px;
+    transform: scale(2);
   }
 }

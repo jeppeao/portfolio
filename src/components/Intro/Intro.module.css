@@ -6,7 +6,7 @@
   align-items: center;
   overflow: scroll;
   padding: 10%;
-  padding-top: max(80px, calc(20vh));
+  padding-top: max(80px, calc(15vh));
 }
 
 h1 {

@@ -1,3 +1,4 @@
+import { BiLink } from "react-icons/bi";
 import styles from "./ProectView.module.css"
 
 export interface ProjectViewProps {
@@ -6,6 +7,8 @@ export interface ProjectViewProps {
   imgSrc: string;
   description: string;
   technologies: string[];
+  repository: string;
+  link: string;
 }
 
 const ProjectView = ({ 
@@ -13,7 +16,9 @@ const ProjectView = ({
   title,
   imgSrc,
   description,
-  technologies
+  technologies,
+  repository,
+  link,
 } : ProjectViewProps) => {
 
   const descriptionBody = (
@@ -23,14 +28,14 @@ const ProjectView = ({
       { 
         technologies.slice(0,-1).map((t: string) => {
           return (
-            <>
+            <span key={t}>
             <span 
             className={isDarkmode ? styles.darkemphasis : styles.lightemphasis} 
             >
               {t}
             </span>
             <span>, </span>
-            </>
+            </span>
           )
         })
       }
@@ -44,6 +49,13 @@ const ProjectView = ({
         {technologies.slice(-1)}
       </span>
       <span>.</span>
+      <span> Click on image or title to try the app.</span>
+      <a href={repository}>
+        <span
+          className={styles.textlink} 
+        > Click here to see the code.</span>
+      </a>
+
     </p>
   )
 
@@ -57,12 +69,21 @@ const ProjectView = ({
         className={`
           ${styles.content}
       `}>
-        <h3>{title}</h3>
+        <a href={link} target="_blank">
+          <div>
+            <h3>
+              {title}
+              <BiLink size={24} color="dodgerblue" className={styles.linkicon}></BiLink>
+            </h3>
+          </div>
+        </a>
+        <a href={link} target="_blank">
         <img 
           src={imgSrc} 
           className={`${styles.image}`}
           width="100%"
         />
+        </a>
         <div 
           className={`
           ${styles.description}

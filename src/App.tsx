@@ -16,11 +16,14 @@ function App() {
         Projects.map((p: ProjectProps) => {
           return (
           <ProjectView
+            key={p.title}
             isDarkmode={isDarkmode}
             title={p.title}
             imgSrc={p.imgSrc}
             description={p.description}
             technologies={p.technologies}
+            repository={p.repository}
+            link={p.link}
           />
           );
         })

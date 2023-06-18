@@ -3,6 +3,8 @@ export interface ProjectProps {
   imgSrc: string,
   description: string,
   technologies: string[];
+  repository: string;
+  link: string;
 }
 
 export const Projects = [
@@ -12,7 +14,7 @@ export const Projects = [
     description: "Find music based on spotify liked songs. This app will fetch recommendations for each of a user's liked songs on spotify and rank suggestions on how many times they were recommended. Maybe the songs recommended most often are the best suggestions?",
     technologies:["React", "Next.js", "Tailwind", "Spotify API"],
     repository: "https://github.com/jeppeao/top-recommendations",
-    link: "top-recommendations.vercel.app"
+    link: "https://top-recommendations.vercel.app"
   },
   {
     title: "Visualize Sorting",
@@ -20,7 +22,7 @@ export const Projects = [
     description: "Visualizes how arrays of numbers are sorted by various algorithms. Allows for running different algorithms in parallel.",
     technologies:["Angular", "Material UI"],
     repository: "https://github.com/jeppeao/visualSorting",
-    link: "visual-sorting-pi.vercel.app"
+    link: "https://visual-sorting-pi.vercel.app"
   },
   {
     title: "Pong",
@@ -28,7 +30,7 @@ export const Projects = [
     description: "A version of the classic game Pong. Flips between horizontal and landscape mode to adjust to viewport dimensions.",
     technologies:["React"],
     repository: "https://github.com/jeppeao/pong-react",
-    link: "pong-orpin.vercel.app"
+    link: "https://pong-orpin.vercel.app"
     
   },
   {
@@ -37,6 +39,6 @@ export const Projects = [
     description: "A version of the classic game tetris.",
     technologies:["Angular"],
     repository: "https://github.com/jeppeao/tetris",
-    link: "tetris-orpin.vercel.app"
+    link: "https://tetris-orpin.vercel.app"
   },
 ];

@@ -14,19 +14,23 @@ const Footer = ({isDarkmode}: FooterProps) => {
         ${isDarkmode ? styles.darkflip : styles.lightflip}
       `}
     >
-      <a href="mailto: jeppeao@gmail.com">
+      
       <div className={styles.item}>
+      <a href="mailto: jeppeao@gmail.com">
         <MdOutlineEmail size={32}/>
         <span>jeppeao@gmail.com</span>
-      </div>
       </a>
+      </div>
+      
 
-      <a href="https://github.com/jeppeao">
+      
       <div className={styles.item}>
+      <a href="https://github.com/jeppeao">
         <FaGithub size={32}/>
         <span>https://github.com/jeppeao</span>
+      </a>
       </div>  
-      </a> 
+       
 
     </div>
   )
