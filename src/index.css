@@ -6,7 +6,7 @@
 
 :root {
   font-family: 'Roboto', Arial, sans-serif;
-  --color-bg-primary: #ddd;
+  --color-bg-primary: #eee;
   --color-fg-primary: #333;
   --color-fg-secondary: dodgerblue;
   --color-bg-dark-primary: #222;
@@ -20,6 +20,7 @@ html, body, #root {
   margin: 0;
   padding: 0;
   background-color: var(--color-bg-primary);
+  /* scroll-behavior: smooth; */
 }
 
 .lightmode {

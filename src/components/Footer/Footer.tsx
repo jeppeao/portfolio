@@ -9,6 +9,7 @@ interface FooterProps {
 const Footer = ({isDarkmode}: FooterProps) => {
   return (
     <div 
+      id="footer"
       className={`
         ${styles.container}
         ${isDarkmode ? styles.darkflip : styles.lightflip}

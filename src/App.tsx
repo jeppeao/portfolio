@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Intro from './components/Intro/Intro'
 import Menu from './components/Menu/Menu'
 import Footer from './components/Footer/Footer';
@@ -8,12 +8,26 @@ import { ProjectProps } from './const';
 
 function App() {
   const [isDarkmode, setIsDarkmode] = useState(true);
+  const projects = useRef<HTMLDivElement>(null);
+
+  const scrollToProject = (nth: number) => {
+    projects.current?.children[nth].scrollIntoView();
+  }
+
   return (
     <>
-      <Menu isDarkmode={isDarkmode} setDarkmode={setIsDarkmode}/>
-      <Intro isDarkmode={isDarkmode}/>
+      <Menu 
+        isDarkmode={isDarkmode} 
+        setDarkmode={setIsDarkmode}
+        goToProject={scrollToProject}
+      />
+      <Intro 
+        isDarkmode={isDarkmode} 
+        onArrowClick={() => scrollToProject(0)}
+      />
+      <div ref={projects}>
       {
-        Projects.map((p: ProjectProps) => {
+        Projects.map((p: ProjectProps, i: number) => {
           return (
           <ProjectView
             key={p.title}
@@ -24,10 +38,13 @@ function App() {
             technologies={p.technologies}
             repository={p.repository}
             link={p.link}
+            order={i}
+            goToProject={scrollToProject}
           />
           );
         })
       }
+      </div>
       <Footer isDarkmode={isDarkmode}/>
     </>
   )

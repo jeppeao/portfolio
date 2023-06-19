@@ -1,5 +1,11 @@
+.arrow {
+  margin-top: 10vh;
+  cursor: pointer;
+  animation: 2s infinite normal bounce;
+}
+
 .container {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -51,4 +57,16 @@ h1 {
     font-size: 3rem;
     line-height: 4rem;
   }
+
+  .arrow {
+    transform: scale(1.4);
+  }
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1,1)    translateY(0); }
+  10%  { transform: scale(1.1,.9) translateY(0); }
+  30%  { transform: scale(.9,1.1) translateY(-30%); opacity: 0.8 }
+  50%  { transform: scale(1,1)    translateY(0); }
+  100% { transform: scale(1,1)    translateY(0); }
 }
