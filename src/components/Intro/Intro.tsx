@@ -1,5 +1,5 @@
 import styles from "./Intro.module.css"
-import { BsArrowDown, BsFillArrowDownCircleFill } from "react-icons/bs"
+import { BsFillArrowDownCircleFill } from "react-icons/bs"
 
 interface IntroProps {
   isDarkmode?: boolean;
