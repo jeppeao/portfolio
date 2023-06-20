@@ -22,6 +22,7 @@ nav {
   font-size: 1.2rem;
   padding-right: 100px;
   gap: 24px;
+  opacity: 0.95;
 }
 
 .projectsbutton {
@@ -29,15 +30,10 @@ nav {
  cursor: pointer;
 }
 
-/* .projectsbutton:focus {
-  border-radius: 5px;
-  box-shadow: 0px 0px 2px;
-} */
-
 .projectsmenu{
   position: absolute;
   top: 100%;
-  width:fit-content;
+  transform: translate(-20%);
   border-radius: 5px;
   box-shadow: 0px 0px 3px;
   display: flex;
@@ -52,11 +48,11 @@ nav {
   overflow-x: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  max-width: 160px;
+  max-width: 30vw;
   cursor: pointer;
   border-radius: 5px;
   padding-left: 10px;
-  padding-right: 2px;
+  padding-right: 10px;
 }
 
 .menulink:hover, .menulink:focus {
