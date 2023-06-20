@@ -20,6 +20,7 @@ img {
   display: flex;
   justify-content: center;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .arrow:hover, .arrow:focus {
