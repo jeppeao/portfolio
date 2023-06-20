@@ -13,7 +13,7 @@ h3 {
 
 img {
   border-radius: 5px;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .arrow {
@@ -29,10 +29,10 @@ img {
 
 .container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: left;
   padding-left: 10vw;
-  padding-top: 80px;
+  padding-top: 85px;
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -42,7 +42,7 @@ img {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -78,7 +78,7 @@ img {
   color: var(--color-fg-secondary);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   h3 {
     font-size: 4rem;
   }
