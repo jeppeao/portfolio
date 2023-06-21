@@ -10,8 +10,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10%;
-  padding-top: max(80px, calc(15vh));
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: max(80px, calc(10vh));
 }
 
 h1 {
@@ -49,12 +50,12 @@ h1 {
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 
   .subheader {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
   }
 
   .arrow {

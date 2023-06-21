@@ -80,12 +80,12 @@ img {
 
 @media (min-width: 1200px) {
   h3 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .description {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
   }
 
   .linkicon {
